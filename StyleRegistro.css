@@ -27,6 +27,7 @@ body {
     border: 2px solid #264143; /* Azul oscuro */
     border-radius: 20px;
     box-shadow: 3px 4px 0px 1px #E99F4C; /* Naranja brillante */
+    padding: 20px;
 }
 
 /* Títulos */
@@ -62,7 +63,8 @@ body {
     font-size: 15px;
 }
 
-.form_style:focus, .btn:focus {
+.form_style:focus,
+.btn:focus {
     transform: translateY(4px);
     box-shadow: 1px 2px 0px 0px #E99F4C;
 }
@@ -78,6 +80,7 @@ body {
     border-radius: 10px;
     font-weight: 800;
     box-shadow: 3px 3px 0px 0px #E99F4C; /* Naranja brillante */
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -91,4 +94,25 @@ body {
     font-weight: 800;
     color: #264143; /* Azul oscuro */
     padding: 5px;
+    text-decoration: none;
+}
+
+/* --------------------------
+   Responsividad (pantallas pequeñas)
+--------------------------- */
+@media (max-width: 600px) {
+    .form_style,
+    .btn {
+        width: 90vw;
+        font-size: 14px;
+    }
+
+    .form_area {
+        width: 95vw;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
 }

@@ -6,13 +6,16 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 /* Contenedor principal */
 .container {
     text-align: center;
+    width: 100%;
+    max-width: 420px;
 }
 
 /* Área del formulario con tonos anaranjados */
@@ -22,17 +25,17 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #FFE4B5; /* Naranja beige suave */
-    height: auto;
-    width: auto;
+    width: 100%;
     border: 2px solid #CD853F; /* Marrón claro para bordes */
     border-radius: 20px;
     box-shadow: 3px 4px 0px 1px #FFB86C; /* Naranja pastel vibrante */
     padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Títulos */
 .title {
-    color: #CD853F; /* Marrón claro */
+    color: #CD853F;
     font-weight: 900;
     font-size: 1.5em;
     margin-top: 10px;
@@ -41,7 +44,7 @@ body {
 .sub_title {
     font-weight: 600;
     margin: 5px 0;
-    color: #CD853F; /* Marrón claro */
+    color: #CD853F;
 }
 
 /* Grupos del formulario */
@@ -50,21 +53,24 @@ body {
     flex-direction: column;
     align-items: baseline;
     margin: 10px;
+    width: 100%;
 }
 
 /* Estilos de los campos de formulario */
 .form_style {
     outline: none;
-    border: 2px solid #CD853F; /* Marrón claro */
-    box-shadow: 3px 4px 0px 1px #FFB86C; /* Naranja pastel */
-    width: 290px;
+    border: 2px solid #CD853F;
+    box-shadow: 3px 4px 0px 1px #FFB86C;
+    width: 100%;
     padding: 12px 10px;
     border-radius: 4px;
     font-size: 15px;
-    background-color: #FFF8DC; /* Crema pálido */
+    background-color: #FFF8DC;
+    box-sizing: border-box;
 }
 
-.form_style:focus, .btn:focus {
+.form_style:focus,
+.btn:focus {
     transform: translateY(4px);
     box-shadow: 1px 2px 0px 0px #FFB86C;
 }
@@ -73,31 +79,49 @@ body {
 .btn {
     padding: 15px;
     margin: 25px 0px;
-    width: 290px;
+    width: 100%;
     font-size: 15px;
-    background: #CD853F; /* Marrón claro */
-    color: #FFE4B5; /* Naranja beige */
+    background: #CD853F;
+    color: #FFE4B5;
     border-radius: 10px;
     font-weight: 800;
-    box-shadow: 3px 3px 0px 0px #FFB86C; /* Naranja pastel */
+    box-shadow: 3px 3px 0px 0px #FFB86C;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 .btn:hover {
-    background-color: #FFE4B5; /* Naranja beige */
-    color: #CD853F; /* Marrón claro */
+    background-color: #FFE4B5;
+    color: #CD853F;
     opacity: .9;
 }
 
 /* Enlaces */
 .link {
     font-weight: 800;
-    color: #CD853F; /* Marrón claro */
+    color: #CD853F;
     padding: 5px;
     text-decoration: none;
 }
 
 .link:hover {
     text-decoration: underline;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    .form_area {
+        padding: 15px;
+    }
+
+    .form_style,
+    .btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 1.3em;
+    }
 }
