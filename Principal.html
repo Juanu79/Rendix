@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Declaración del juego de caracteres y la configuración de la vista en dispositivos móviles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rendix.COM</title>
+  <link rel="stylesheet" href="StylePrincipal.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="IMAGENES/RendiX.jpg" alt="Logo de Rendix">
+      </div>
+      
+      <nav>
+<!--Boton de busqueda-->
+<div class="input__container">
+  <div class="shadow__input"></div>
+  <button class="input__button__shadow">
+    <svg fill="none" viewBox="0 0 20 20" height="20px" width="20px">
+      <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#17202A"></path>
+    </svg>
+  </button>
+  <input type="text" name="text" class="input__search" placeholder="Buscar Productos, Marcas o Servicios">
+</div>
+
+        <ul id="menu">
+          <li><a href="#"onclick="redirigirInicioyRegistro()">Regístrate / Inicia Sesión</a></li>
+          <li><a href="#">Productos destacados</a></li>
+          <li><a href="#">Contáctenos</a></li>
+          <li class="dropdown">
+            <a href="#">Más opciones</a>
+            <ul class="dropdown-content">
+              <li><a href="#" onclick="redirigirCalificacion()">Califícanos</a></li>
+              <li><a href="#" onclick="redirigirAyuda()">Ayuda</a></li>
+              <li><a href="#" onclick="redirigirPQRS()">PQRS</a></li>
+             
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="button">
+      ALQUILA YA
+      <svg class="cartIcon" viewBox="10 0 1210 577">
+        <path d="M0 23C0 0.75 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+        </path>
+      </svg>
+    </button>
+    
+  </header> 
+  
+
+
+
+
+  <!-- Contenedor para las filas -->
+   <!-- Texto de introducción a la sección de productos destacados del día -->
+   <H3> 🌟¡Descubre los Productos de alquiler del Día! 🌟</H3>
+   <h5>No dejes pasar la oportunidad! Sumérgete en nuestra selección especial de hoy y encuentra increíbles ofertas en productos destacados. ¡Sólo por tiempo limitado! 🚀🛒</h5>
+    
+   <!-- Contenedor principal de productos organizados en filas -->
+  <div class="flex-container">
+    <div class="fila">
+      <div class="Bloque1">Lavadora 11 Kilogramos Haceb Panel Frontal Digital Gris
+        <div class="card">
+          <div class="content">
+            <img src="IMAGENES/7704353431483-1.webp" alt="Lavadora-Haceb" width="200">
+            <div class="price">$50.000 cop</div>
+            <div class="price">Por 1 día</div>
+            <div class="description">La lavadora Haceb, tiene período de uso  de 2 meses. Marca: Haceb. Funcionalidades: alta eficiencia energética, capacidad de carga de 10 kg, programas de lavado rápidos y silenciosos, tecnología antiarrugas y fácil manejo. Ideal para familias y uso intensivo.
+            </div>
+          </div>
+          <button onclick="redirigir1()">Alquilar</button>
+        </div>
+      </div>
+
+      <div class="Bloque2">IBIZA SOUND XTK10 BAFLE SONIDO ABS PASIVO
+        <div class="card">
+          <div class="content">
+            <img src="IMAGENES/karma-bx-7415-altavoz-pasivo-de-15-450w.jpg" alt="Bafle IBIZA SOUND" width="200">
+            <div class="price">$39.900 cop</div>
+            <div class="price"> Por 1 día</div>
+            <div class="description">El Ibiza Sound XTK10 es un bafle pasivo de 10 pulgadas, tiene un periodo de uso de 9 meses. Construido en plástico ABS duradero, con potencia máxima de 300W y 150W RMS. Ideal para eventos móviles y fijos, ofrece sonido claro y robusto, fácil transporte, y bajo mantenimiento. 
+            </div>
+          </div>
+          <button onclick="redirigir2()">Alquilar</button>
+        </div>
+      </div>
+
+      <div class="Bloque3">Televisor 32 Pulgadas Challenger LED TV3
+        <div class="card">
+          <div class="content">
+            <img src="IMAGENES/7705191043944_01.webp" alt="Televisor 32 p" width="200">
+            <div class="price">$65.000 cop</div>
+            <div class="price">Por 1 día</div>
+            <div class="description">El Televisor 32 Pulgadas Challenger LED TV es un televisor de tiempo de uso de 5 meses HD con conectividad Bluetooth, Wi-Fi, y soporte para Android TV1
+              . Incluye dos puertos HDMI, una entrada USB, y es compatible con TDT1
+              . Ideal para hogares y negocios, ofrece una calidad de imagen nítida y colores brillantes
+            </div>
+          </div>
+          <button onclick="redirigir3()">Alquilar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fila fila-espacio">
+      <div class="Bloque4">Xbox 360
+        <div class="card">
+          <div class="content">
+            <img src="IMAGENES/41G+FzEeRCL.jpg" alt="Lavadora-Haceb" width="200">
+            <div class="price">$49.900 cop</div>
+            <div class="price">Por 1 día</div>
+            <div class="description">La Xbox 360  tiene un tiempo de uso de 1 año, equipada con una CPU PowerPC de 3.2 GHz, 512 MB de RAM y una tarjeta gráfica ATI de 500 MHz. Viene con videojuegos incorporados para que puedas empezar a jugar de inmediato. Ofrece soporte para hasta cuatro controladores inalámbricos, tiene puertos USB y Ethernet, y es compatible con una amplia biblioteca de juegos en DVD. ¡Ideal para horas de diversión y entretenimiento!
+            </div>
+          </div>
+          <button onclick="redirigir4()">Alquilar</button>
+        </div>
+      </div>
+
+      <div class="Bloque5">CAMPING IGLU ROYAKAMP 4 PERSONAS
+        <div class="card">
+          <div class="content">
+            <img src="IMAGENES/tienda-turistica-aislado-sobre-fondo-blanco_873674-588.avif" alt="Lavadora-Haceb" width="200">
+            <div class="price">$35.000 cop</div>
+            <div class="price">Por 3 días</div>
+            <div class="description">La lavadora Haceb, tiene período de uso es de 2 meses. Marca: Haceb. Funcionalidades: alta eficiencia energética, capacidad de carga de 10 kg, programas de lavado rápidos y silenciosos, tecnología antiarrugas y fácil manejo. Ideal para familias y uso intensivo.
+            </div>
+          </div>
+          <button onclick="redirigir5()">Alquilar</button>
+        </div>
+      </div>
+
+      <div class="Bloque6">Renault Kwid 2019
+        <div class="card">
+          <div class="content">
+            <img src="IMAGENES/Renault Kwid.jpeg" alt="Lavadora-Haceb" width="200">
+            <div class="price">$500.000 cop</div>
+            <div class="price">Por 7 días</div>
+            <div class="description">El Renault Kwid es modelo 2019 con 35.000 km, económico y práctico, ideal para la ciudad1
+              . Viene con motores de 0.8L y 1.0L, tracción delantera, y una altura sobre el suelo de 184 mm2
+              . Ofrece un espacio de carga amplio de hasta 290 litros, buena calidad interior y tecnología moderna como Android Auto y Apple CarPlay3
+              . Perfecto para trayectos urbanos y viajes cortos. 
+            </div>
+          </div>
+          <!--fUNCIÓN JS ONCLICK que ejecuta una ACCIÓN cuando se haga clic en el botón .-->
+          <button onclick="redirigir6()">Alquilar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+ 
+  
+<section id="seccion3">
+  <h2 id="p2">Nuestros Servicios, RendiX La nueva forma de alquilar fácil y sin limites</h2>
+  <div class="flex-container1">
+    <!-- Primera columna -->
+    <div class="column1">
+      <h3 id="title">Paga Con tarjeta o efectivo </h3>
+      <p id="p4">En RendiX, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo con efectivo en puntos de pago. 
+        <br>¡Y siempre de la manera más segura!
+      </p>
+      <img src="IMAGENES/Logos-Formas-de-Pago-2-sin-Medios.png" alt="Videojuego #3" width="450">
+    </div>
+    <!-- Segunda columna -->
+    <div class="column2">
+      <h3 id="title">Descuentos exclusivos para miembros:</h3>
+      <p>Accede a ofertas exclusivas y descuentos solo para miembros registrados. ¡Únete gratis y comienza a ahorrar en cada compra!
+      </p>
+      <img src="IMAGENES/MEMBRESÍA.png" alt="Videojuego #4" width="450">
+    </div>
+    <div class="column3">
+      <h3 id="title">Spider-Man 2
+          Videojuego</h3>
+      <p>Marvel's Spider-Man 2 es un videojuego de acción y aventura de mundo abierto desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment. Basado en el personaje de Marvel Comics​
+        <br>Disponible próximamente.
+      </p>
+      <img src="c:\Users\57318\Pictures\BANCO DE IMAGENES\images.jpg" alt="Videojuego #4" width="450">
+    </div>
+</section>
+<!-- Contenedor de pie de página con información de contacto -->
+<footer>
+  <h4>Contáctanos</h4>
+  <p><strong>Email:</strong> contacto@rendix.com</p>
+  <p><strong>Teléfono:</strong> +57 301 123 4567</p>
+  <p>&copy; 2024 Rendix. Todos los derechos reservados.</p>
+</footer>
+
+<pre id="result"></pre>
+<script src="Redirecion.js"></script>
+</body>
+</html>

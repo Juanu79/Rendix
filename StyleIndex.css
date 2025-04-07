@@ -1,0 +1,68 @@
+/* Fondo del body */
+body {
+    background-color: #013220; /* Verde oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilo de la tarjeta */
+.card {
+    width: 190px;
+    height: auto;
+    background: #07182E; /* Azul oscuro */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 20px; /* Espacio entre la imagen y la tarjeta */
+    padding: 20px;
+}
+
+/* Botones con colores de la marca */
+.button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0.6em 2em;
+    margin-top: 10px;
+    border: 2px solid #FF8800; /* Naranja oscuro */
+    border-radius: 0.25em;
+    color: #28B106; /* Verde intenso */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms, background-color 300ms;
+}
+
+.button p {
+    margin: 0;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #FF8800; /* Fondo naranja */
+    color: white; /* Texto blanco */
+}
+
+img {
+    margin-bottom: 20px; /* Espacio entre la imagen y el contenedor */
+  }

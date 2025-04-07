@@ -1,0 +1,103 @@
+/* Fondo del body con verde oscuro */
+body {
+    background-color: #013220; /* Verde oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+}
+
+/* Área del formulario con tonos anaranjados */
+.form_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFE4B5; /* Naranja beige suave */
+    height: auto;
+    width: auto;
+    border: 2px solid #CD853F; /* Marrón claro para bordes */
+    border-radius: 20px;
+    box-shadow: 3px 4px 0px 1px #FFB86C; /* Naranja pastel vibrante */
+    padding: 20px;
+}
+
+/* Títulos */
+.title {
+    color: #CD853F; /* Marrón claro */
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.sub_title {
+    font-weight: 600;
+    margin: 5px 0;
+    color: #CD853F; /* Marrón claro */
+}
+
+/* Grupos del formulario */
+.form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px;
+}
+
+/* Estilos de los campos de formulario */
+.form_style {
+    outline: none;
+    border: 2px solid #CD853F; /* Marrón claro */
+    box-shadow: 3px 4px 0px 1px #FFB86C; /* Naranja pastel */
+    width: 290px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #FFF8DC; /* Crema pálido */
+}
+
+.form_style:focus, .btn:focus {
+    transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #FFB86C;
+}
+
+/* Botones */
+.btn {
+    padding: 15px;
+    margin: 25px 0px;
+    width: 290px;
+    font-size: 15px;
+    background: #CD853F; /* Marrón claro */
+    color: #FFE4B5; /* Naranja beige */
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0px 0px #FFB86C; /* Naranja pastel */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFE4B5; /* Naranja beige */
+    color: #CD853F; /* Marrón claro */
+    opacity: .9;
+}
+
+/* Enlaces */
+.link {
+    font-weight: 800;
+    color: #CD853F; /* Marrón claro */
+    padding: 5px;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

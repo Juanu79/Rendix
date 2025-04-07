@@ -1,0 +1,701 @@
+/* Estilos generales */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: linear-gradient(310deg, #ff8000, #0c8301);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+  }
+  
+  /* Estilos del contenedor de bloques */
+
+  
+  /* Estilos del menú */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que el menú sea responsivo */
+  }
+  
+  nav li {
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+    position: relative; /* Necesario para el menú desplegable */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333; /* Color del texto */
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto hover en los enlaces */
+  nav a:hover {
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px; /* Añade bordes redondeados en hover */
+    transform: scale(1.05); /* Animación de crecimiento */
+  }
+  
+  /* Menú desplegable */
+  .dropdown-content {
+    display: none; /* Oculta el contenido del menú por defecto */
+    position: absolute; /* Posiciona el menú desplegable */
+    background-color: #000000;
+    box-shadow: 0px 8px 16px rgba(167, 162, 162, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+    top: 100%; /* Posiciona el menú desplegable debajo del elemento padre */
+    left: 0; /* Alinea el menú a la izquierda */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; /* Muestra el contenido del menú al hacer hover */
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555; /* Cambia el color de fondo cuando se selecciona */
+  }
+  
+ /* Estilos del contenedor flex */
+ /* Estilos del contenedor flex */
+/* Estilos del contenedor flex */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los bloques se ajusten automáticamente a nuevas líneas si es necesario */
+    gap: 10px; /* Espacio entre los bloques */
+    padding: 1rem;
+    justify-content: center; /* Centra los bloques */
+  }
+  
+  /* Estilos de las filas */
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los bloques en la fila */
+  }
+  
+  /* Estilos de los bloques */
+  div.Bloque1,
+  div.Bloque2,
+  div.Bloque3,
+  div.Bloque4,
+  div.Bloque5,
+  div.Bloque6,
+  div.Bloque7,
+  div.Bloque8 {
+    background: #ffffff;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(29, 113, 8, 0.818);
+    padding: 1.2rem;
+    width: calc(31% - 15px); /* Ajusta el ancho para que se distribuyan 4 bloques por fila con espacio entre ellos */
+  }
+  
+  /* Media Queries para hacer la página responsiva */
+  @media (max-width: 1200px) {
+    div.Bloque1,
+    div.Bloque2,
+    div.Bloque3,
+    div.Bloque4,
+    div.Bloque5,
+    div.Bloque6,
+    div.Bloque7,
+    div.Bloque8 {
+      width: calc(33.33% - 10px); /* 3 bloques por fila */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    div.Bloque1,
+    div.Bloque2,
+    div.Bloque3,
+    div.Bloque4,
+    div.Bloque5,
+    div.Bloque6,
+    div.Bloque7,
+    div.Bloque8 {
+      width: calc(50% - 10px); /* 2 bloques por fila */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    div.Bloque1,
+    div.Bloque2,
+    div.Bloque3,
+    div.Bloque4,
+    div.Bloque5,
+    div.Bloque6,
+    div.Bloque7,
+    div.Bloque8 {
+      width: 100%; /* 1 bloque por fila */
+    }
+  }
+  
+  
+  /* Estilos del botón "ALQUILA YA" */
+  .button {
+    width: 180px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    background-image: linear-gradient(rgba(8, 252, 0, 0.763), rgb(4, 115, 8)); /* Fondo con un degradado lineal */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados, haciendo que el botón sea ovalado */
+    color: rgb(255, 255, 255); /* Color del texto */
+    font-weight: 600; /* Grosor de la fuente */
+    display: flex; /* Uso de Flexbox para alinear el contenido */
+    align-items: center; /* Alinea verticalmente el contenido al centro */
+    justify-content: center; /* Alinea horizontalmente el contenido al centro */
+    gap: 5px; /* Espacio entre los elementos hijos del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    box-shadow: 1px 3px 0px rgb(0, 213, 46); /* Sombra del botón */
+    transition-duration: 0.3s; /* Duración de la transición de las propiedades que cambian */
+  }
+  
+  .button:hover {
+    background-image: linear-gradient(rgba(4, 115, 8, 0.763), rgb(8, 252, 0)); /* Fondo invertido en hover */
+    color: rgb(255, 255, 255); /* Color del texto en hover */
+  }
+  /*Adiccionarcolor al CARRITO DE COMPRAS*/
+  .cartIcon path {
+    fill: rgb(255, 255, 255); /* Asegura que el color de relleno sea blanco */
+  }
+  
+  .button:active {
+    transform: scale(0.95); /* Efecto de presión */
+    box-shadow: 1px 3px 0px rgb(0, 213, 46); /* Sombra del botón */
+  }
+  /* Estilos de la tarjeta */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 140, 255, 0.4), 0 4px 6px -4px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background-color: #00ff37;
+    background: linear-gradient(45deg, #ff6200ea 0%, #43aa07 100%);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+  }
+  
+  .content .price {
+    color: #fff;
+    font-weight: 800;
+    font-size: 28px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  }
+  
+  .content .description {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .content .title {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  
+  button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.90rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(20, 94, 14);
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #c8ff00;
+  }
+  
+  /* Media Queries para hacer la página responsiva */
+  @media (max-width: 768px) {
+    .contenedor-bloques {
+      flex-direction: column; /* Cambia la dirección de los bloques a columna en pantallas más pequeñas */
+      align-items: center; /* Centra los bloques verticalmente */
+    }
+  
+    .contenedor-bloques .fila {
+      flex-direction: column; /* Asegura que cada fila también se ajuste */
+      width: 100%; /* Asegura que los bloques ocupen el ancho completo */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Coloca los elementos del menú en una columna */
+    }
+  }
+  /* From Uiverse.io by EddyBel */ 
+  .input__container {
+    
+    position: relative;
+    background: rgba(255, 255, 255, 0.664);
+    padding: 9px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 25px;
+    max-width: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(1deg) rotateY(-10deg);
+}
+
+.shadow__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(30px);
+  border-radius: 20px;
+  background-color: #ffdb99;
+  background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 74% 68%, rgb(255, 255, 255) 0px, transparent 50%),
+    radial-gradient(at 64% 79%, rgb(0, 11, 25) 0px, transparent 50%),
+    radial-gradient(at 75% 16%, rgb(0, 0, 0) 0px, transparent 50%),
+    radial-gradient(at 90% 65%, rgb(0, 209, 115) 0px, transparent 50%),
+    radial-gradient(at 91% 83%, rgb(255, 89, 0) 0px, transparent 50%),
+    radial-gradient(at 72% 91%, rgb(114, 228, 110) 0px, transparent 50%);
+}
+
+.input__button__shadow {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: transform 0ms, background 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.input__button__shadow:hover {
+  background: rgba(105, 70, 70, 0.411);
+}
+
+.input__search {
+  width: 900%;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  padding: 7px;
+  position: relative;
+}
+
+h3 {
+  text-align: center;
+  font-family: fantasy;
+  text-shadow: 0px 0px 10px #ffe600;
+  color: #d53b08b9;
+}
+  
+h5 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal; /* Quita la negrita */
+}
+#seccion3 {
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+.flex-container {
+  display: flex; /* Hace que las dos columnas se alineen en fila */
+  justify-content: space-between; /* Espacio entre las dos columnas */
+  gap: 50px; /* Añade espacio entre las dos columnas */
+}
+
+.column1, .column2, .column3 {
+  flex: 1; /* Cada columna ocupa el mismo espacio */
+  padding: 20px;
+  background-color: #f4faf6;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(20, 115, 1, 0.83); /* Añade una sombra suave para resaltar las cajas */
+}
+
+.column1 img, .column2 img, .column3 img{
+  max-width: 100%;; /* Las imágenes ocuparán todo el ancho de sus columnas */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(31, 6, 6, 0.2); /* Sombra para las imágenes */
+  height: auto;
+  text-align: center;
+}
+
+.column1 p, .column2 p, .column3 p{
+  font-size: 15px;
+  margin-bottom: 45px;
+  
+}
+#title {
+  color: rgb(196, 75, 0);
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 0 5px 4px rgba(32, 115, 2, 0.83);
+}
+
+#l1 {
+  text-align: center;
+  color: #00fd04; /* Color del texto blanco */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px; /* Más espacio alrededor del contenido */
+  border: none; /* Sin borde */
+  background: linear-gradient(135deg, #057b5e, #0e1249); /* Degradado de color */
+  border-radius: 12px; /* Esquinas redondeadas */
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Sombra para darle profundidad */
+  transition: transform 0.3s ease, background 0.3s ease; /* Transición suave para transformaciones y cambios de color */
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+/* Contenedor principal para centrar los bloques en una fila */
+.metcards-container {
+  display: flex; /* Utiliza Flexbox para organizar elementos en fila */
+  justify-content: center; /* Centra los bloques horizontalmente en el contenedor */
+  gap: 1rem; /* Espacio entre los bloques */
+  flex-wrap: wrap; /* Permite que los bloques se envuelvan en múltiples filas si es necesario */
+  margin-bottom: 2rem; /* Espacio inferior del contenedor */
+}
+.metcard {
+  width: 320px; /* Ancho fijo para cada bloque */
+  display: flex; /* Flexbox para organizar elementos internos */
+  flex-direction: column; /* Apila los elementos internos verticalmente */
+  border-radius: 0.25rem; /* Bordes redondeados */
+  background-color: rgba(17, 24, 39, 1); /* Color de fondo oscuro */
+  padding: 1.5rem; /* Espacio interno alrededor del contenido */
+  margin: 0 1rem; /* Espacio lateral entre cada bloque */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho y alto total del bloque */
+}
+
+
+.mettitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #ff6a00
+}
+
+.price {
+  font-size: 2.75rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #1eff00
+}
+
+.desc {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+  color: rgba(156, 163, 175, 1);
+}
+
+.lists {
+  margin-bottom: 1.5rem;
+  flex: 1 1 0%;
+  color: rgba(156, 163, 175, 1);
+}
+
+.lists .list {
+  margin-bottom: 0.5rem;
+  display: flex;
+  margin-left: 0.5rem
+}
+
+.lists .list svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  color: rgb(255, 115, 0);
+}
+
+.action {
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: rgb(255, 106, 0);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgb(0, 0, 0);
+}
+.image-container {
+  text-align: center; /* Centra la imagen horizontalmente dentro del contenedor */
+}
+
+.image-container img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem; /* Tamaño de fuente ajustable según preferencia */
+  font-weight: 600; /* Peso de la fuente para darle más énfasis */
+  color: #333; /* Color del texto */
+  text-align: center; /* Centrar el texto horizontalmente */
+  background-color: #f2f2f2; /* Color de fondo para destacar el texto */
+  padding: 10px; /* Espacio interno alrededor del texto */
+  border-radius: 5px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  margin: 20px auto; /* Espaciado vertical y centrado horizontal */
+  width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+#p2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible y moderna */
+  font-size: 1rem; /* Tamaño de fuente adecuado */
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+  color: #333; /* Color del texto */
+  background-color: #f9f9f9; /* Color de fondo suave */
+  padding: 15px; /* Espaciado interno alrededor del texto */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 5px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  max-width: 800px; /* Ancho máximo para evitar que el texto se extienda demasiado */
+  margin: 20px auto; /* Centrando el párrafo con margen vertical */
+}
+
+.cardprofile {
+  width: 300px; /* Ancho de la tarjeta */
+  padding: 20px; /* Espaciado interno */
+  background: #d65900; /* Fondo blanco */
+  border: 6px solid #000000; /* Borde negro de 6px */
+  box-shadow: 12px 12px 0 #149a2a; /* Sombra de la caja con desplazamiento */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para transformaciones y sombras */
+  
+}
+
+
+
+/* Efecto hover para la tarjeta */
+.card5:hover {
+  transform: translate(-5px, -5px); /* Mueve la tarjeta ligeramente hacia arriba y a la izquierda */
+  box-shadow: 17px 17px 0 #220000; /* Sombra más pronunciada al hacer hover */
+}
+
+/* Estilo para el título de la tarjeta */
+.card__title {
+  font-size: 32px; /* Tamaño de la fuente */
+  font-weight: 900; /* Fuente en negrita */
+  color: #000000; /* Color negro */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  margin-bottom: 15px; /* Espacio inferior */
+  display: block;
+  position: relative;
+  overflow: hidden; /* Oculta cualquier contenido fuera de los límites */
+}
+
+/* Animación de subrayado en el título */
+.card__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%; /* Ancho del subrayado */
+  height: 3px; /* Altura del subrayado */
+  background-color: #ffffff; /* Color del subrayado */
+  transform: translateX(-100%); /* La línea está fuera de la vista al principio */
+  transition: transform 0.3s; /* Transición suave */
+}
+
+.card:hover .card__title::after {
+  transform: translateX(0); /* La línea se mueve para aparecer al hacer hover */
+}
+
+/* Estilo para el contenido de la tarjeta */
+.card__content {
+  font-size: 16px; /* Tamaño de la fuente */
+  line-height: 1.4; /* Altura de línea para mayor legibilidad */
+  color: #000000; /* Color del texto */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo y comportamiento del formulario */
+.card__form {
+  display: flex; /* Uso de flexbox para organizar los elementos en columna */
+  flex-direction: column; /* Dirección vertical */
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Estilo para el campo de entrada */
+.card__form input {
+  padding: 10px; /* Relleno dentro del campo de texto */
+  border: 3px solid #000000; /* Borde negro */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-family: inherit; /* Hereda la familia de fuente del documento */
+  transition: transform 0.3s; /* Transición para transformaciones */
+  width: calc(100% - 26px); /* Ancho ajustado teniendo en cuenta el padding y borde */
+}
+
+/* Estilo para el campo de entrada cuando está en foco */
+.card__form input:focus {
+  outline: none; /* Sin borde por defecto al hacer foco */
+  transform: scale(1.05); /* Aumento de tamaño al enfocar */
+  background-color: #000; /* Fondo negro */
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Estilo para el botón */
+.card__button {
+  border: 3px solid #000; /* Borde negro */
+  background: #056919; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 10px; /* Relleno dentro del botón */
+  font-size: 18px; /* Tamaño de la fuente */
+  left: 20%; /* Desplazamiento del botón */
+  font-weight: bold; /* Fuente en negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  cursor: pointer; /* Puntero al pasar el mouse */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s; /* Transición suave */
+  width: 50%; /* Ancho del 50% del contenedor */
+  height: 100%; /* Altura completa */
+}
+
+/* Efecto hover en el botón: cambio de contenido con pseudo-elemento ::before */
+.card__button::before {
+  content: "Sure?"; /* Contenido que aparece dentro del botón */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105%;
+  background-color: #5ad641; /* Fondo verde */
+  color: #000; /* Texto negro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%); /* Desplazado hacia abajo */
+  transition: transform 0.3s; /* Transición suave */
+}
+
+/* El contenido se desliza hacia arriba al hacer hover en el botón */
+.card__button:hover::before {
+  transform: translateY(0);
+}
+
+/* Estilo al presionar el botón */
+.card__button:active {
+  transform: scale(0.95); /* El botón se reduce un poco cuando es presionado */
+}
+
+
+
+/* Aplicar animación de glitch */
+.glitch {
+  animation: glitch 0.3s infinite; /* La animación de glitch se repite infinitamente */
+}
+
+/* From Uiverse.io by KINGFRESS */ 
+button3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 1em -2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 80%;
+  
+}
+
+button3 span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #00b609;
+  border-radius: 50%;
+  transition: .8s ease;
+}
+
+button3 span:nth-child(6) {
+  position: relative;
+}
+
+button3 span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+button3 span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+button3 span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+button3 span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+button3 span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+button3:hover span:not(:nth-child(6)) {
+  transform: translate(-10%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+  
