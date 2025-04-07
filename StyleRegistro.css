@@ -67,8 +67,7 @@ body {
     font-size: 15px;
 }
 
-.form_style:focus,
-.btn:focus {
+.form_style:focus, .btn:focus {
     transform: translateY(4px);
     box-shadow: 1px 2px 0px 0px #E99F4C;
 }
@@ -101,9 +100,11 @@ body {
     text-decoration: none;
 }
 
-/* --------------------------
-   Responsividad (pantallas pequeñas)
---------------------------- */
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad (pantallas pequeñas) */
 @media (max-width: 600px) {
     .form_style,
     .btn {
@@ -120,3 +121,4 @@ body {
         font-size: 1.2em;
     }
 }
+
