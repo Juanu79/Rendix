@@ -6,13 +6,16 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 /* Contenedor principal */
 .container {
     text-align: center;
+    width: 100%;
+    max-width: 420px;
 }
 
 /* Área del formulario */
@@ -50,6 +53,7 @@ body {
     flex-direction: column;
     align-items: baseline;
     margin: 10px;
+    width: 100%;
 }
 
 /* Estilos de los campos de formulario */
